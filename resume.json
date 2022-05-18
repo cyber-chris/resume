@@ -6,7 +6,7 @@
         "email": "me@cyberchris.xyz",
         "phone": "",
         "url": "https://cyberchris.xyz",
-        "summary": "Chris Tomy is a curious, lifelong student of Computer Science. He has professional experience in full-stack development, and research experience applying logic programming to container build systems. Academically, his studies at UCL instilled an ability to deep dive into a broad range of technical topics, from the low-levels of x86-64 assembly to modern neural network architecture.",
+        "summary": "Chris Tomy has professional experience in full-stack development, and research experience applying logic programming to container build systems. Academically, his studies at UCL instilled an ability to deep dive into a broad range of technical topics, from the low-levels of x86-64 assembly to modern neural network architecture.",
         "location": {
             "address": "",
             "postalCode": "",
@@ -27,35 +27,59 @@
             }
         ]
     },
-    "work": [{
-        "name": "G-Research",
-        "position": "Software Engineer Intern",
-        "url": "https://www.gresearch.co.uk/",
-        "startDate": "2021-07-05",
-        "endDate": "2021-09-28",
-        "summary": "12 week internship as a software engineer in the Realtime Quant Tyburn Tactical team.",
-        "highlights": [
-            "Built an ASP.NET web app in C# using the Blazor UI framework. Purpose: provide views into the development pipeline of one of the major applications involved in trading. This includes the state of regression tests, live production instances of the app, and more.",
-            "Using Prometheus and PromQL, added metrics to a service and an alert for better awareness of its state."
-        ]
-    }],
+    "work": [
+        {
+            "name": "G-Research",
+            "position": "Software Engineer Intern",
+            "url": "https://www.gresearch.co.uk/",
+            "startDate": "2021-07-05",
+            "endDate": "2021-09-28",
+            "summary": "12 week internship as a software engineer in the Realtime Quant Tyburn Tactical team.",
+            "highlights": [
+                "Built an ASP.NET web app using the Blazor UI framework. Purpose: provide views into the development pipeline of one of the major applications involved in trading. This includes the state of regression tests, live production instances of the app, and more.",
+                "Using Prometheus, added metrics to a service and an alert for better awareness of its state."
+            ],
+            "keywords": ["ASP.NET", "C#", "Blazor", "Prometheus"]
+        },
+        {
+            "name": "Computer Science Department, UCL",
+            "position": "Programming Tutor",
+            "startDate": "2020-10-01",
+            "endDate": "2021-03-01",
+            "summary": "Supporting first year undergraduates in developing their programming skills in four languages.",
+            "keywords": ["C", "Haskell", "Java", "Python"]
+        },
+        {
+            "name": "Softwire",
+            "position": "Software Developer Intern",
+            "startDate": "2020-07-06",
+            "endDate": "2021-08-28",
+            "summary": "8 week summer internship as a software developer.",
+            "highlights": [
+                "Worked with a 100k+ LOC codebase on a multiplatform mobile app.",
+                "Worked on a static site built with the Gatsby framework."
+            ],
+            "keywords": ["Kotlin", "Swift", "React"]
+        }
+    ],
     "education": [{
         "institution": "University College London",
         "url": "https://www.ucl.ac.uk/",
         "area": "Computer Science",
-        "studyType": "Bachelor of Science with Honours",
+        "studyType": "BSc (Hons)",
         "startDate": "2019-09-01",
         "endDate": "2022-06-10",
-        "score": "",
+        "score": "TBC",
         "courses": [
-            "Computer Systems (COMP0019)"
+            "Computer Systems (COMP0019)",
+            "Computer Graphics (COMP0027)"
         ]
     }],
     "publications": [{
         "name": "TODO",
-        "publisher": "Company",
-        "releaseDate": "2014-10-01",
-        "url": "https://publication.com",
+        "publisher": "ACM",
+        "releaseDate": "2022-03-17",
+        "url": "https://example.com",
         "summary": "Description…"
     }],
     "skills": [{
@@ -80,7 +104,7 @@
     }],
     "projects": [{
         "name": "Modus",
-        "description": "Description…",
+        "summary": "Modus is a language that facilitates parameterised container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation.",
         "highlights": [
             "TODO"
         ],
