@@ -1,0 +1,101 @@
+{
+    "basics": {
+        "name": "Chris Tomy",
+        "label": "Software Engineer",
+        "image": "",
+        "email": "me@cyberchris.xyz",
+        "phone": "",
+        "url": "https://cyberchris.xyz",
+        "summary": "Chris Tomy is a curious, lifelong student of Computer Science. He has professional experience in full-stack development, and research experience applying logic programming to container build systems. Academically, his studies at UCL instilled an ability to deep dive into a broad range of technical topics, from the low-levels of x86-64 assembly to modern neural network architecture.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "London",
+            "countryCode": "GB",
+            "region": ""
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "cyber-chris",
+                "url": "https://github.com/cyber-chris"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "chris-tomy",
+                "url": "https://www.linkedin.com/in/chris-tomy"
+            }
+        ]
+    },
+    "work": [{
+        "name": "G-Research",
+        "position": "Software Engineer Intern",
+        "url": "https://www.gresearch.co.uk/",
+        "startDate": "2021-07-05",
+        "endDate": "2021-09-28",
+        "summary": "12 week internship as a software engineer in the Realtime Quant Tyburn Tactical team.",
+        "highlights": [
+            "Built an ASP.NET web app in C# using the Blazor UI framework. Purpose: provide views into the development pipeline of one of the major applications involved in trading. This includes the state of regression tests, live production instances of the app, and more.",
+            "Using Prometheus and PromQL, added metrics to a service and an alert for better awareness of its state."
+        ]
+    }],
+    "education": [{
+        "institution": "University College London",
+        "url": "https://www.ucl.ac.uk/",
+        "area": "Computer Science",
+        "studyType": "Bachelor of Science with Honours",
+        "startDate": "2019-09-01",
+        "endDate": "2022-06-10",
+        "score": "",
+        "courses": [
+            "Computer Systems (COMP0019)"
+        ]
+    }],
+    "publications": [{
+        "name": "TODO",
+        "publisher": "Company",
+        "releaseDate": "2014-10-01",
+        "url": "https://publication.com",
+        "summary": "Description…"
+    }],
+    "skills": [{
+        "name": "Web Development",
+        "level": "",
+        "keywords": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }],
+    "languages": [{
+        "language": "English",
+        "fluency": "Native speaker"
+    }],
+    "interests": [{
+        "name": "Guitar",
+        "keywords": [
+            "Grade 2: Merit",
+            "Self-taught for 5+ years"
+        ]
+    }],
+    "projects": [{
+        "name": "Modus",
+        "description": "Description…",
+        "highlights": [
+            "TODO"
+        ],
+        "keywords": [
+            "Rust",
+            "Docker",
+            "Datalog"
+        ],
+        "startDate": "2021-10-01",
+        "endDate": "2022-05-01",
+        "url": "https://modus-continens.com/",
+        "roles": [
+            "Developer"
+        ],
+        "entity": "Entity",
+        "type": "application"
+    }]
+}
