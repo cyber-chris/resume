@@ -98,15 +98,6 @@
             "summary": "Academic report on the P vs. NP problem. Achieved an A*."
         }
     ],
-    "skills": [{
-        "name": "Web Development",
-        "level": "",
-        "keywords": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ]
-    }],
     "languages": [{
         "language": "English",
         "fluency": "Native speaker"
@@ -118,21 +109,40 @@
             "Self-taught for 5+ years"
         ]
     }],
-    "projects": [{
-        "name": "Modus",
-        "summary": "Modus is a language that facilitates parameterised container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation.",
-        "keywords": [
-            "Rust",
-            "Docker",
-            "Datalog"
-        ],
-        "startDate": "2021-10-01",
-        "endDate": "2022-05-01",
-        "url": "https://modus-continens.com/",
-        "roles": [
-            "Developer"
-        ],
-        "entity": "Entity",
-        "type": "application"
-    }]
+    "projects": [
+        {
+            "name": "Modus",
+            "summary": "Modus is a language that facilitates parameterised container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation.",
+            "keywords": [
+                "Rust",
+                "Docker",
+                "Datalog"
+            ],
+            "startDate": "2021-10-01",
+            "endDate": "2022-05-01",
+            "url": "https://modus-continens.com/",
+            "roles": [
+                "Developer"
+            ],
+            "entity": "Entity",
+            "type": "application"
+        },
+        {
+            "name": "NudgeMe",
+            "summary": "NudgeMe is a cross-platform mobile wellbeing app that encourages you to look after yourself. This was developed during Y2 of my BSc, through UCL's IXN programme.",
+            "keywords": [
+                "Flutter",
+                "Go"
+            ],
+            "startDate": "2020",
+            "endDate": "2021",
+            "url": "http://students.cs.ucl.ac.uk/2020/group26/",
+            "roles": [
+                "Team Lead",
+                "Developer"
+            ],
+            "entity": "Entity",
+            "type": "application"
+        }
+    ]
 }
