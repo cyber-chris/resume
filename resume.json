@@ -78,7 +78,7 @@
             ]
         },
         {
-            "area": "Maths, Further Maths, Computer Science",
+            "area": "Maths, Further Maths, & Computer Science",
             "studyType": "A-Levels",
             "startDate": "2017",
             "endDate": "2019",
@@ -128,7 +128,7 @@
         },
         {
             "name": "NudgeMe",
-            "summary": "NudgeMe is a cross-platform mobile wellbeing app that encourages you to look after yourself. This was developed during Y2 of my BSc, through UCL's IXN programme.",
+            "summary": "NudgeMe is a cross-platform mobile wellbeing app that encourages users to look after themselves. Developed during Y2 of my BSc, through UCL's IXN programme.",
             "keywords": [
                 "Flutter",
                 "Go"

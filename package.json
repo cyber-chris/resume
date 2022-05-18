@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "jsonresume-theme-autumn": "^1.0.1",
+    "jsonresume-theme-autumn": "github:cyber-chris/jsonresume-theme-autumn",
     "jsonresume-theme-stackoverflow": "^2.0.0"
   }
 }
