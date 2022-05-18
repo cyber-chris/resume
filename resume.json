@@ -62,26 +62,42 @@
             "keywords": ["Kotlin", "Swift", "React"]
         }
     ],
-    "education": [{
-        "institution": "University College London",
-        "url": "https://www.ucl.ac.uk/",
-        "area": "Computer Science",
-        "studyType": "BSc (Hons)",
-        "startDate": "2019-09-01",
-        "endDate": "2022-06-10",
-        "score": "TBC",
-        "courses": [
-            "Computer Systems (COMP0019)",
-            "Computer Graphics (COMP0027)"
-        ]
-    }],
-    "publications": [{
-        "name": "TODO",
-        "publisher": "ACM",
-        "releaseDate": "2022-03-17",
-        "url": "https://example.com",
-        "summary": "Description…"
-    }],
+    "education": [
+        {
+            "institution": "University College London",
+            "url": "https://www.ucl.ac.uk/",
+            "area": "Computer Science",
+            "studyType": "BSc (Hons)",
+            "startDate": "2019-09-01",
+            "endDate": "2022-06-10",
+            "score": "TODO",
+            "courses": [
+                "Computer Systems (COMP0019)",
+                "Computer Graphics (COMP0027)",
+                "Mathematics and Statistics (COMP0011)"
+            ]
+        },
+        {
+            "area": "A-Levels",
+            "studyType": "",
+            "startDate": "2017",
+            "endDate": "2019",
+            "score": "",
+            "courses": [
+                "Maths: A*",
+                "Further Maths: A*",
+                "Computer Science: A*"
+            ]
+        },
+        {
+            "institution": "AQA",
+            "area": "EPQ",
+            "studyType": "(Level 3)",
+            "startDate": "2017",
+            "endDate": "2018",
+            "summary": "Academic report on the P vs. NP problem. Achieved an A*."
+        }
+    ],
     "skills": [{
         "name": "Web Development",
         "level": "",
@@ -105,9 +121,6 @@
     "projects": [{
         "name": "Modus",
         "summary": "Modus is a language that facilitates parameterised container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation.",
-        "highlights": [
-            "TODO"
-        ],
         "keywords": [
             "Rust",
             "Docker",
