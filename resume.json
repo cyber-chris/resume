@@ -78,8 +78,8 @@
             ]
         },
         {
-            "area": "A-Levels",
-            "studyType": "",
+            "area": "Maths, Further Maths, Computer Science",
+            "studyType": "A-Levels",
             "startDate": "2017",
             "endDate": "2019",
             "score": "",
@@ -90,9 +90,8 @@
             ]
         },
         {
-            "institution": "AQA",
-            "area": "EPQ",
-            "studyType": "(Level 3)",
+            "area": "Computational Complexity",
+            "studyType": "(Level 3) EPQ",
             "startDate": "2017",
             "endDate": "2018",
             "summary": "Academic report on the P vs. NP problem. Achieved an A*."
