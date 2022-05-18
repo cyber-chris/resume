@@ -14,5 +14,3 @@ My résumé, using the https://jsonresume.org/ schema.
         "summary": "Description…"
     }],
 ```
-
-- add skills section

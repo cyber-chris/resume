@@ -96,6 +96,16 @@
             "summary": "Academic report on the P vs. NP problem. Achieved an A*."
         }
     ],
+    "skills": [
+        {
+            "name": "Cloud Native Development",
+            "keywords": ["Docker", "Kubernetes"]
+        },
+        {
+            "name": "Web Development",
+            "keywords": ["HTML", "CSS", "JavaScript"]
+        }
+    ],
     "languages": [{
         "language": "English",
         "fluency": "Native speaker"
