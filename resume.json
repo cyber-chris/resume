@@ -56,7 +56,7 @@
             "endDate": "2021-08-28",
             "summary": "8 week summer internship as a software developer.",
             "highlights": [
-                "Worked with a 100k+ LOC codebase on a multiplatform mobile app.",
+                "Worked with a 100k+ LOC codebase on a multiplatform mobile app; production code for an app that had 110k+ downloads.",
                 "Worked on a static site built with the Gatsby framework."
             ],
             "keywords": ["Kotlin", "Swift", "React"]
