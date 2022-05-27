@@ -15,6 +15,10 @@
     function formatKeywords(keywords) {
         return keywords.map(keyword => keyword.replace('#', '\\#')).map(keyword => `\\inlinebox{${keyword}}`).join(' ');
     }
+
+    function formatHighlights(highlights) {
+        return '\\begin{itemize}' + highlights.map(h => `\\item ${h}`) + '\\end{itemize}';
+    }
 %>
 
 % NOTE: compile with lualatex
@@ -62,7 +66,7 @@
 % \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than
 % 1--2 lines.\newline{}%
 <% work.forEach(function(w) { %>
-    \cventry{<%= formatDate(w.startDate) %> --- <%= formatDate(w.endDate) %>}{<%= w.position %>}{<%= w.name %>}{}{}{<%= w.keywords ? formatKeywords(w.keywords) + '\\\\' : '' %><%= w.summary %>}
+    \cventry{<%= formatDate(w.startDate) %> --- <%= formatDate(w.endDate) %>}{<%= w.position %>}{<%= w.name %>}{}{}{<%= w.keywords ? formatKeywords(w.keywords) + '\\\\' : '' %><%= w.summary %><%= w.highlights ? formatHighlights(w.highlights) : '' %>}
 <% }); %>
 
 \section{Education}
@@ -79,10 +83,6 @@
 \cvitem{Languages}{
   \textit{In approximate order of fluency:} English, Python, Java/Kotlin, C\#, Flutter/Dart,
   C, Go, Web Dev (HTML/CSS/JS), C++, \LaTeX{}, Haskell
-}
-\cvitem{Hobby-coding}{
-  I like undertaking small coding projects occasionally; please visit my website/blog
-  (or ask me!) to see what I've been doing lately.
 }
 \cvitem{Guitar}{
   I have received a merit in the `Grade 2' guitar exam after learning for two
