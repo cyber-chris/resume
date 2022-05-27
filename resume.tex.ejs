@@ -33,7 +33,7 @@
  box align=base,
  nobeforeafter,
  colupper=white,
- colback=orange!90!white,
+ colback=orange!70!white,
  colframe=orange,
  size=fbox,
  left=1pt,
@@ -57,16 +57,22 @@
 \begin{document}
 
 \makecvtitle{}
-\section{Education}
-<% education.forEach(function(edu) { %>
-   \cventry{<%= formatDate(edu.startDate) %> --- <%= formatDate(edu.endDate) %>}{<%= edu.area %>}{<%= edu.studyType %><%= edu.studyType && edu.institution ? ', ' : '' %><%= edu.institution %>}{}{<%= edu.score %>}{<%= edu.courses ? formatKeywords(edu.courses) + '\\\\' : '' %><%= edu.summary %>}
-<% }); %>
 
 \section{Experience}
 % \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than
 % 1--2 lines.\newline{}%
 <% work.forEach(function(w) { %>
-   \cventry{<%= formatDate(w.startDate) %> --- <%= formatDate(w.endDate) %>}{<%= w.position %>}{<%= w.name %>}{}{}{<%= w.keywords ? formatKeywords(w.keywords) + '\\\\' : '' %><%= w.summary %>}
+    \cventry{<%= formatDate(w.startDate) %> --- <%= formatDate(w.endDate) %>}{<%= w.position %>}{<%= w.name %>}{}{}{<%= w.keywords ? formatKeywords(w.keywords) + '\\\\' : '' %><%= w.summary %>}
+<% }); %>
+
+\section{Education}
+<% education.forEach(function(edu) { %>
+    \cventry{<%= formatDate(edu.startDate) %> --- <%= formatDate(edu.endDate) %>}{<%= edu.area %>}{<%= edu.studyType %><%= edu.studyType && edu.institution ? ', ' : '' %><%= edu.institution %>}{}{<%= edu.score %>}{<%= edu.courses ? formatKeywords(edu.courses) + '\\\\' : '' %><%= edu.summary %>}
+<% }); %>
+
+\section{Projects}
+<% projects.forEach(function(project) { %>
+    \cventry{<%= formatDate(project.startDate) %> --- <%= formatDate(project.endDate) %>}{\href{<%= project.url %>}{<%= project.name %>}}{}{}{}{<%= project.keywords ? formatKeywords(project.keywords) + '\\\\' : '' %><%- project.summary %>}
 <% }); %>
 
 \section{Interests \& Skills}
