@@ -1,10 +1,16 @@
 {
   "dependencies": {
+    "dateformat": "^5.0.3",
+    "ejs": "^3.1.8",
+    "ejs-lint": "^1.2.2",
     "jsonresume-theme-autumn": "git+https://github.com:cyber-chris/jsonresume-theme-autumn",
     "jsonresume-theme-stackoverflow": "^2.0.0",
     "resume-cli": "^3.0.7"
   },
   "scripts": {
-    "build": "mkdir -p public && resume export public/index.html --theme=jsonresume-theme-autumn"
+    "lint": "ejslint resume.tex.ejs",
+    "build": "mkdir -p public && resume export public/index.html --theme=jsonresume-theme-autumn",
+    "template": "ejs resume.tex.ejs -f resume.json",
+    "compile": "ejs resume.tex.ejs -f resume.json > resume.tex && lualatex resume.tex"
   }
 }

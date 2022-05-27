@@ -1,0 +1,87 @@
+<%
+    function formatDate(dateStr) {
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let parts = dateStr.match(/(\d+)/g); // assume ISO 8601
+        let output = "";
+        if (parts.length > 1) {
+           output += months[parseInt(parts[1]) - 1] + ' ';
+        }
+        if (parts.length > 0) {
+           output += parts[0];
+        }
+        return output;
+    }
+
+    function formatKeywords(keywords) {
+        return keywords.map(keyword => keyword.replace('#', '\\#')).map(keyword => `\\inlinebox{${keyword}}`).join(' ');
+    }
+%>
+
+% NOTE: compile with lualatex
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\moderncvcolor{orange}
+\nopagenumbers{}
+
+\PassOptionsToPackage{svgnames,x11names,dvipsnames}{xcolor}
+\usepackage[scale=0.75, margin=2cm]{geometry}
+\usepackage[most]{tcolorbox}
+
+\newtcbox{\inlinebox}[1][]{enhanced,
+ box align=base,
+ nobeforeafter,
+ colupper=white,
+ colback=orange!90!white,
+ colframe=orange,
+ size=fbox,
+ left=1pt,
+ right=1pt,
+ boxsep=3pt,
+ #1}
+
+% personal:
+<% let full_name = basics.name.split(' '); %>
+\name{<%= full_name[0] %>}{<%= full_name[1] %>}
+
+\title{<%= basics.label %>}
+% \address{<%= basics.location.city %>}
+% \phone[mobile]{<%= basics.phone %>}
+\email{<%= basics.email %>}
+\homepage{<%= basics.url %>}
+<% basics.profiles.forEach(function(profile){ %>
+   \social[<%= profile.network.toLowerCase() %>]{<%= profile.username %>}
+<% }); %>
+
+\begin{document}
+
+\makecvtitle{}
+\section{Education}
+<% education.forEach(function(edu) { %>
+   \cventry{<%= formatDate(edu.startDate) %> --- <%= formatDate(edu.endDate) %>}{<%= edu.area %>}{<%= edu.studyType %><%= edu.studyType && edu.institution ? ', ' : '' %><%= edu.institution %>}{}{<%= edu.score %>}{<%= edu.courses ? formatKeywords(edu.courses) + '\\\\' : '' %><%= edu.summary %>}
+<% }); %>
+
+\section{Experience}
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than
+% 1--2 lines.\newline{}%
+<% work.forEach(function(w) { %>
+   \cventry{<%= formatDate(w.startDate) %> --- <%= formatDate(w.endDate) %>}{<%= w.position %>}{<%= w.name %>}{}{}{<%= w.keywords ? formatKeywords(w.keywords) + '\\\\' : '' %><%= w.summary %>}
+<% }); %>
+
+\section{Interests \& Skills}
+\cvitem{Languages}{
+  \textit{In approximate order of fluency:} English, Python, Java/Kotlin, C\#, Flutter/Dart,
+  C, Go, Web Dev (HTML/CSS/JS), C++, \LaTeX{}, Haskell
+}
+\cvitem{Hobby-coding}{
+  I like undertaking small coding projects occasionally; please visit my website/blog
+  (or ask me!) to see what I've been doing lately.
+}
+\cvitem{Guitar}{
+  I have received a merit in the `Grade 2' guitar exam after learning for two
+  years with an instructor. Now, I purely self-teach myself and have been playing the
+  guitar for over 6 years.
+}
+
+\end{document}

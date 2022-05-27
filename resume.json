@@ -70,15 +70,15 @@
             "studyType": "BSc (Hons)",
             "startDate": "2019-09-01",
             "endDate": "2022-06-10",
-            "score": "TODO",
+            "score": "",
             "courses": [
-                "Computer Systems (COMP0019)",
-                "Computer Graphics (COMP0027)",
-                "Mathematics and Statistics (COMP0011)"
+                "Computer Systems",
+                "Computer Graphics",
+                "Mathematics and Statistics"
             ]
         },
         {
-            "area": "Maths, Further Maths, & Computer Science",
+            "area": "Maths, Further Maths, and Computer Science",
             "studyType": "A-Levels",
             "startDate": "2017",
             "endDate": "2019",
@@ -90,7 +90,8 @@
             ]
         },
         {
-            "studyType": "(Level 3) Extended Project Qualification",
+            "area": "Extended Project Qualification Report",
+            "studyType": "Level 3",
             "startDate": "2017",
             "endDate": "2018",
             "summary": "Academic report on the outcomes of the P vs. NP problem. Achieved an A*."
