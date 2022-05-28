@@ -36,7 +36,7 @@
             "endDate": "2021-09-28",
             "summary": "12 week internship as a software engineer in the Realtime Quant Tyburn Tactical team.",
             "highlights": [
-                "Built an ASP.NET web app using the Blazor UI framework. Purpose: provide views into the development pipeline of one of the major applications involved in trading. This includes the state of regression tests, live production instances of the app, and more.",
+                "Built an ASP.NET web app using the Blazor UI framework. Purpose: provide views into the development pipeline of one of the major applications involved in trading. This includes the state of regression tests and live production instances of the app.",
                 "Using Prometheus, added metrics to a service and an alert for better awareness of its state."
             ],
             "keywords": ["ASP.NET", "C#", "Blazor", "Prometheus"]
@@ -52,6 +52,7 @@
         {
             "name": "Softwire",
             "position": "Software Developer Intern",
+            "url": "https://www.softwire.com/",
             "startDate": "2020-07-06",
             "endDate": "2021-08-28",
             "summary": "8 week summer internship as a software developer.",
@@ -70,6 +71,7 @@
             "studyType": "BSc (Hons)",
             "startDate": "2019-09-01",
             "endDate": "2022-06-10",
+            "summary": "A three year CS course with an Integrated Engineering Programme (IEP) specialisation of Intelligent Systems, providing an additional three AI-focused modules.",
             "score": "",
             "courses": [
                 "Computer Systems",

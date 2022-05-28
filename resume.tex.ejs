@@ -17,7 +17,7 @@
     }
 
     function formatHighlights(highlights) {
-        return '\\begin{itemize}' + highlights.map(h => `\\item ${h}`) + '\\end{itemize}';
+        return '\\begin{itemize}' + highlights.map(h => `\\item ${h}`).join(' ') + '\\end{itemize}';
     }
 %>
 
@@ -30,7 +30,8 @@
 \nopagenumbers{}
 
 \PassOptionsToPackage{svgnames,x11names,dvipsnames}{xcolor}
-\usepackage[scale=0.75, margin=2cm]{geometry}
+\usepackage[scale=0.9]{geometry}
+\recomputelengths
 \usepackage[most]{tcolorbox}
 
 \newtcbox{\inlinebox}[1][]{enhanced,
@@ -42,7 +43,7 @@
  size=fbox,
  left=1pt,
  right=1pt,
- boxsep=3pt,
+ boxsep=1.5pt,
  #1}
 
 % personal:
@@ -53,7 +54,7 @@
 % \address{<%= basics.location.city %>}
 % \phone[mobile]{<%= basics.phone %>}
 \email{<%= basics.email %>}
-\homepage{<%= basics.url %>}
+\homepage{<%= basics.url.replace("https://", "").replace("http://", "") %>}
 <% basics.profiles.forEach(function(profile){ %>
    \social[<%= profile.network.toLowerCase() %>]{<%= profile.username %>}
 <% }); %>
@@ -79,15 +80,9 @@
     \cventry{<%= formatDate(project.startDate) %> --- <%= formatDate(project.endDate) %>}{\href{<%= project.url %>}{<%= project.name %>}}{}{}{}{<%= project.keywords ? formatKeywords(project.keywords) + '\\\\' : '' %><%- project.summary %>}
 <% }); %>
 
-\section{Interests \& Skills}
-\cvitem{Languages}{
-  \textit{In approximate order of fluency:} English, Python, Java/Kotlin, C\#, Flutter/Dart,
-  C, Go, Web Dev (HTML/CSS/JS), C++, \LaTeX{}, Haskell
-}
-\cvitem{Guitar}{
-  I have received a merit in the `Grade 2' guitar exam after learning for two
-  years with an instructor. Now, I purely self-teach myself and have been playing the
-  guitar for over 6 years.
-}
+\section{Skills}
+<% skills.forEach(function(skill) { %>
+    \cvline{<%= skill.name %>}{<%= formatKeywords(skill.keywords) %>}
+<% }); %>
 
 \end{document}
