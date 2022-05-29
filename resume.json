@@ -71,7 +71,7 @@
             "studyType": "BSc (Hons)",
             "startDate": "2019-09-01",
             "endDate": "2022-06-10",
-            "summary": "A three year CS course. I chose an Integrated Engineering Programme (IEP) specialisation of Intelligent Systems, providing an additional three AI-focused modules.",
+            "summary": "A three year CS course. I chose an Integrated Engineering Programme (IEP) specialization of Intelligent Systems, providing an additional three AI-focused modules.",
             "score": "",
             "courses": [
                 "Computer Systems",
@@ -101,12 +101,12 @@
     ],
     "skills": [
         {
-            "name": "Cloud Native Development",
-            "keywords": ["Docker", "Kubernetes"]
+            "name": "Programming Languages",
+            "keywords": ["Python", "Java", "Rust", "C#", "C", "Bash (Scripting)", "HTML/CSS/JS (Web Dev)"]
         },
         {
-            "name": "Web Development",
-            "keywords": ["HTML", "CSS", "JavaScript"]
+            "name": "Cloud Native Development",
+            "keywords": ["Docker", "Kubernetes"]
         }
     ],
     "languages": [{
@@ -123,7 +123,7 @@
     "projects": [
         {
             "name": "Modus",
-            "summary": "Modus is a language that facilitates parameterised container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation.",
+            "summary": "Modus is a language that facilitates parameterized container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation.",
             "keywords": [
                 "Rust",
                 "Docker",
