@@ -10,6 +10,7 @@
   "scripts": {
     "lint": "ejslint resume.tex.ejs",
     "build": "mkdir -p public && resume export public/index.html --theme=jsonresume-theme-autumn",
+    "build-basic": "mkdir -p public && resume export public/index.html --theme=jsonresume-theme-stackoverflow",
     "template": "ejs resume.tex.ejs -f resume.json",
     "compile": "ejs resume.tex.ejs -f resume.json > resume.tex && lualatex resume.tex"
   }

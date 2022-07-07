@@ -8,7 +8,7 @@ Can generate a PDF or HTML page.
 
 ## TODO
 
-- add publication
+- add accepted conference paper
 
 ``` json
     "publications": [{

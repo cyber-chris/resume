@@ -69,14 +69,13 @@
             "url": "https://www.ucl.ac.uk/",
             "area": "Computer Science",
             "studyType": "BSc (Hons)",
-            "startDate": "2019-09-01",
+            "startDate": "2019-09-23",
             "endDate": "2022-06-10",
-            "summary": "A three year CS course. I chose an Integrated Engineering Programme (IEP) specialization of Intelligent Systems, providing an additional three AI-focused modules.",
-            "score": "",
+            "summary": "A First Class Honours degree in Computer Science. I chose an Integrated Engineering Programme (IEP) specialization of Intelligent Systems, studying three AI focused modules.",
             "courses": [
-                "Computer Systems",
-                "Computer Graphics",
-                "Mathematics and Statistics"
+                "Computer Systems: 90.40",
+                "Computer Graphics: 91.95",
+                "Mathematics and Statistics: 91.65"
             ]
         },
         {
@@ -123,7 +122,7 @@
     "projects": [
         {
             "name": "Modus",
-            "summary": "Modus is a language that facilitates parameterized container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation.",
+            "summary": "Modus is a language that facilitates parameterized container builds. My BSc final year project was implementing the frontend of this language, including the parser and translation. I also co-authored a research paper that has been accepted into ESEC/FSE 2022.",
             "keywords": [
                 "Rust",
                 "Docker",
