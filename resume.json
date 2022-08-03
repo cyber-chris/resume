@@ -3,7 +3,7 @@
         "name": "Chris Tomy",
         "label": "Software Engineer",
         "image": "",
-        "email": "me@cyberchris.xyz",
+        "email": "work@cyberchris.xyz",
         "phone": "",
         "url": "https://cyberchris.xyz",
         "summary": "Chris Tomy has professional experience in full-stack development, and research experience applying logic programming to container build systems. Academically, his studies at UCL instilled an ability to deep dive into a broad range of technical topics, from the low-levels of x86-64 assembly to modern neural network architecture.",
@@ -71,7 +71,7 @@
             "studyType": "BSc (Hons)",
             "startDate": "2019-09-23",
             "endDate": "2022-06-10",
-            "summary": "A First Class Honours degree in Computer Science. I chose an Integrated Engineering Programme (IEP) specialization of Intelligent Systems, studying three AI focused modules.",
+            "summary": "First Class Honours degree in Computer Science. I chose an Integrated Engineering Programme (IEP) specialization of Intelligent Systems, studying three AI focused modules.",
             "courses": [
                 "Computer Systems: 90.40",
                 "Computer Graphics: 91.95",
