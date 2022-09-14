@@ -30,6 +30,13 @@
     "work": [
         {
             "name": "G-Research",
+            "position": "Software Engineer",
+            "url": "https://www.gresearch.co.uk/",
+            "startDate": "2022-09-12",
+            "summary": "Full-time software engineering role working in the Realtime Quant Platform Engineering team."
+        },
+        {
+            "name": "G-Research",
             "position": "Software Engineer Intern",
             "url": "https://www.gresearch.co.uk/",
             "startDate": "2021-07-05",
