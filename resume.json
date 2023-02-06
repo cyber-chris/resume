@@ -33,6 +33,10 @@
             "position": "Software Engineer",
             "url": "https://www.gresearch.co.uk/",
             "startDate": "2022-09-12",
+            "highlights": [
+                "Developing, debugging, and deploying algo services in addition to other services that support the trading platform.",
+                "Understanding the domain-specific concepts necessary to operate trading services in co-located datacenters around the world."
+            ],
             "summary": "Full-time software engineering role working in the Realtime Quant Platform Engineering team."
         },
         {
