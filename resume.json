@@ -37,7 +37,8 @@
                 "Developing, debugging, and deploying algo services in addition to other services that support the trading platform.",
                 "Understanding the domain-specific concepts necessary to operate trading services in co-located datacenters around the world."
             ],
-            "summary": "Full-time software engineering role working in the Realtime Quant Platform Engineering team."
+            "summary": "Full-time software engineer working in the Realtime Quant Platform Engineering team.",
+            "keywords": ["C#", "F#", "Prometheus", "Aeron"]
         },
         {
             "name": "G-Research",
@@ -66,11 +67,7 @@
             "url": "https://www.softwire.com/",
             "startDate": "2020-07-06",
             "endDate": "2021-08-28",
-            "summary": "8 week summer internship as a software developer.",
-            "highlights": [
-                "Worked with a 100k+ LOC codebase on a multiplatform mobile app; production code for an app that had 110k+ downloads.",
-                "Worked on a static site built with the Gatsby framework."
-            ],
+            "summary": "8 week summer internship as a software developer. Worked with a 100k+ LOC codebase on a multiplatform mobile app; production code for an app that had 110k+ downloads. Developed a supporting static site built with the Gatsby framework.",
             "keywords": ["Kotlin", "Swift", "React"]
         }
     ],
@@ -82,7 +79,7 @@
             "studyType": "BSc (Hons)",
             "startDate": "2019-09-23",
             "endDate": "2022-06-10",
-            "summary": "First Class Honours degree in Computer Science. I chose an Integrated Engineering Programme (IEP) specialization of Intelligent Systems, studying three AI focused modules.",
+            "summary": "First Class Honours in Computer Science. Made the UCL Engineering Deans List for strong academic performance.",
             "courses": [
                 "Computer Systems: 90.40",
                 "Computer Graphics: 91.95",
@@ -136,7 +133,8 @@
             "publisher": "Association for Computing Machinery",
             "releaseDate": "2022-11-09",
             "url": "https://dl.acm.org/doi/abs/10.1145/3540250.3549133",
-            "summary": "Published in ESEC/FSE 2022: Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
+            "summary": "Published in ESEC/FSE 2022: Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering.",
+            "keywords": ["Datalog", "Docker", "Build System"]
         }
     ],
     "projects": [

@@ -1,5 +1,9 @@
 <%
     function formatDate(dateStr) {
+        if (!dateStr) {
+           return "Now";
+        }
+
         const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         let parts = dateStr.match(/(\d+)/g); // assume ISO 8601
         let output = "";
@@ -76,9 +80,15 @@
     \cventry{<%= formatDate(edu.startDate) %> --- <%= formatDate(edu.endDate) %>}{<%= edu.area %>}{<%= edu.studyType %><%= edu.studyType && edu.institution ? ', ' : '' %><%= edu.institution %>}{}{<%= edu.score %>}{<%= edu.courses ? formatKeywords(edu.courses) + '\\\\' : '' %><%= edu.summary %>}
 <% }); %>
 
-\section{Projects}
-<% projects.forEach(function(project) { %>
-    \cventry{<%= formatDate(project.startDate) %> --- <%= formatDate(project.endDate) %>}{\href{<%= project.url %>}{<%= project.name %>}}{}{}{}{<%= project.keywords ? formatKeywords(project.keywords) + '\\\\' : '' %><%- project.summary %>}
+% NOTE: not including projects for now
+% \section{Projects}
+% <% projects.forEach(function(project) { %>
+%     \cventry{<%= formatDate(project.startDate) %> --- <%= formatDate(project.endDate) %>}{\href{<%= project.url %>}{<%= project.name %>}}{}{}{}{<%= project.keywords ? formatKeywords(project.keywords) + '\\\\' : '' %><%- project.summary %>}
+% <% }); %>
+
+\section{Publications}
+<% publications.forEach(function(pub) { %>
+    \cventry{<%= formatDate(pub.releaseDate) %>}{\href{<%= pub.url %>}{<%= pub.name %>}}{<%= pub.publisher %>}{}{}{<%= pub.keywords ? formatKeywords(pub.keywords) + '\\\\' : '' %><%- pub.summary %>}
 <% }); %>
 
 \section{Skills}
